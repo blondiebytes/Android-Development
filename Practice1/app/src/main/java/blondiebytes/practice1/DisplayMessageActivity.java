@@ -1,19 +1,14 @@
 package blondiebytes.practice1;
 
-import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.EditText;
 
+/**
+ * Created by kathrynhodge on 4/8/15.
+ */
+public class DisplayMessageActivity {
 
-public class MainActivity extends ActionBarActivity {
-
-    String MESSAGE_KEY = "MESSAGE_KEY";
-
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -43,14 +38,6 @@ public class MainActivity extends ActionBarActivity {
     }
 
 
-    public void sendMessage(View view) {
-        /* take me to this view --> DisplayMessageActivity */
-        Intent intent = new Intent(this, DisplayMessageActivity.class);
-        EditText etMessage = (EditText) findViewById(R.id.etSendText);
-        String message = etMessage.getText().toString();
-        intent.putExtra(MESSAGE_KEY, message);
-        startActivity(intent);
-    }
 
 
 }

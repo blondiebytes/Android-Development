@@ -16,11 +16,15 @@
         android:layout_height="wrap_content"
         android:hint="Enter Text Here"/>
 
-    <!--<Button-->
-        <!--android:id ="@+id/btnSend"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="Send"/>-->
+    <!--weight as a ratio between elements-->
+
+    <Button
+        android:id ="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:onClick="sendMessage"/>
+
 
 
 </LinearLayout>
