@@ -39,9 +39,10 @@
     <SeekBar
         android:id="@+id/volumeSlider"
         style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnRow1"
-        android:max="100"/>
+        android:max="100"
+        android:progress="50"/>
 
 </RelativeLayout>
